@@ -22,7 +22,7 @@ class ProjectSeeder extends Seeder
             $nuovoProgetto->creation_date = $faker->dateTime();
             $nuovoProgetto->image = $faker->imageUrl(640, 480, 'cars', true);
             $nuovoProgetto->supervisor = $faker->firstName() . " " . $faker->lastName();
-
+            $nuovoProgetto->type_id = $faker->numberBetween(0, 4);
             $nuovoProgetto->save();
         }
     }

@@ -36,7 +36,7 @@
 								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-white {{ Route::currentRouteName() == 'admin.projects.create' ? 'bg-secondary' : '' }}" href="{{route('admin.dashboard')}}">
+								<a class="nav-link text-white {{ Route::currentRouteName() == 'admin.dashboard' ? 'bg-secondary' : '' }}" href="{{route('admin.dashboard')}}">
 									<i class="fa-solid fa-gears fa-lg fa-fw"></i> Dashboard
 								</a>
 							</li>
