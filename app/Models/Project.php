@@ -16,4 +16,9 @@ class Project extends Model
         "creation_date",
         "supervisor"
     ];
+
+    public function type()
+    {
+        return $this->belongsTo(Type::class);
+    }
 }
