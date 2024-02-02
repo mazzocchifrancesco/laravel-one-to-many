@@ -50,7 +50,16 @@
 									<i class="fa-solid fa-plus fa-lg fa-fw"></i> Crea Progetto
 								</a>
 							</li>
-
+							<li class="nav-item">
+								<a class="nav-link text-white {{ Route::currentRouteName() == 'admin.type.create' ? 'bg-secondary' : '' }}" href="{{route('admin.type.create')}}">
+									<i class="fa-solid fa-plus fa-lg fa-fw"></i> Crea Type
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white {{ Route::currentRouteName() == 'admin.type.index' ? 'bg-secondary' : '' }}" href="{{route('admin.type.index')}}">
+									<i class="fa-solid fa-list fa-lg fa-fw"></i> Index Type
+								</a>
+							</li>
 							<li class="nav-item">
 								<a class="nav-link text-white" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
 									<i class="fa-solid fa-sign-out-alt fa-lg fa-fw"></i> {{ __('Logout') }}

@@ -3,7 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController; //<---- Import del controller precedentemente creato!
 use App\Http\Controllers\Admin\ProjectController;
+use App\Http\Controllers\Admin\TypeController;
 use App\Models\Project;
+use App\Models\Type;
+
 
 /* ... */
 
@@ -22,6 +25,7 @@ Route::middleware(['auth'])
         Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
         Route::resource('projects', ProjectController::class);
+        Route::resource('type', TypeController::class);
     });
 
 
